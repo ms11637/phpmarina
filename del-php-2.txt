@@ -1,0 +1,68 @@
+/* test 1 */
+  <?php 
+  $link= mysql_connect($host, $user, $password)
+  or die( "<br><br><b>MySQL Error:</b> " . mysql_errno() . " // " . mysql_error() . "<br><br>" ); 
+ 
+ $db = mysql_select_db($dbname, $link )
+  or die( "<br><br><b>MySQL Error:</b> " . mysql_errno() . " // " . mysql_error() . "<br><br>" );
+
+  $res = mysql_query($sql, $link)
+   or die( "<br><br><b>MySQL Error:</b> " . mysql_errno() . " // " . mysql_error() . "<br><br>" );
+  
+ if( $res == "" ) {
+ echo "Nothing in recordset.";
+ } else {
+   echo "<div class='pageTitle'>The list of projects and hottrack cases " .
+      "for DataMigrator with Salesforce<br>&nbsp;</br></div>";  	
+ //echo "<H2>The list of projects and hottrack cases for DataMigrator with Salesforce </H2><BR>";
+ } 
+ /* test 1 end */ 
+
+sfdsn
+"FILEDSN="
+FILEDSN=C:\Program Files\Common Files\ODBC\DataSources\Oraclewp.dsn
+DRIVER={DataDirect 7.1 Salesforce}
+
+C:\WINDOWS\SysWOW64\odbcad32.exe
+
+To manage a data source that connects to a 32-bit driver under 64-bit platform, use c:\windows\sysWOW64\odbcad32.exe. 
+To manage a data source that connects to a 64-bit driver, use c:\windows\system32\odbcad32.exe. 
+If you use the 64-bit odbcad32.exe to configure or remove a DSN that connects to a 32-bit driver you will receive this message.
+
+Data source name not found and no default driver specified
+
+64-bit User DSNs show up in the 32-bit Administrator and when 32-bit client applications ask for all available DSNs -- even though the 64-bit DSNs cannot be used by the 32-bit client app and Adminstrator.
+
+
+ Windows Registry Editor Version 5.00
+ 
+ [HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBCINST.INI\DataDirect 32-BIT Odbc2Jdbc bridge 1.0]
+ "APILevel"="1"
+ "ConnectFunctions"="NYN"
+ "CPTimeout"="60"
+ "Driver"="C:\\Program Files\\DataDirect\\slserver60\\bin\\ivo2j21.dll"
+ "DriverODBCVer"="3.52"
+ "FileUsage"="0"
+ "SQLLevel"="1"
+
+
+
+c:\Program Files\Progress\DataDirect\Connect64_for_ODBC_71\Drivers\ddsfrc27.dll
+
+
+To configure a connection, you might enter:
+
+[Salesforce]
+Driver=ODBCHOME/lib/ivsfrc25.so
+HostName=test.salesforce.com
+UserName=JohnDoe
+Password=secret
+
+located in the ODBCHOME/bin directory. For example, to load the 32-bit DB2 driver, you would enter:
+$ ivtestlib ODBCHOME/lib/ivdb2nn.zz
+
+
+;C:\Program Files\Progress\DataDirect\Connect64_for_ODBC_71\Drivers;
+C:\Program Files\Progress\DataDirect\Connect64_for_ODBC_71\jre\bin\server;
+C:\Program Files\Progress\DataDirect\Connect64_for_ODBC_71\jre\bin\client;
+
