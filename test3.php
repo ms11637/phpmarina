@@ -1,6 +1,6 @@
 <?php
 // DSN=Salesforce;UID=JOHN@MYCOMPANY.COM;PWD=XYZZY
-// user=marina_shamailova@ibi.com     password: Yulkhan5  Security Token: f5ozC53hxJTSxVHCakcz5z0w
+// user=marina_shamailova@ibi.com     password: bYulkhan5  Security Token: f5ozC53hxJTSxVHCakcz5z0w
 
 $conn=odbc_connect('northwind','','');
 if (!$conn)
